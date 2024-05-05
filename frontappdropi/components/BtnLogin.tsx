@@ -14,7 +14,7 @@ export function BtnLogin() {
 
   return (
     <>
-      <Button onClick={() => setOpenModal(true)}>Comenzar!</Button>
+      <Button onClick={() => setOpenModal(true)}>Comenzar</Button>
       <Modal show={openModal} size="md" onClose={onCloseModal} popup>
         <Modal.Header />
         <Modal.Body>
