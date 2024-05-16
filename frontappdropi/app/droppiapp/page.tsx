@@ -8,12 +8,12 @@ import { Button, Label } from "flowbite-react";
 
 const API_ENDPOINT = "https://api.dropi.co/api/products/index";
 const LOCAL_ENDPOINT = "http://localhost:8080/api/products";
-const token = "TOKEN_API";
 
 export default function Page() {
   const [products, setProducts] = useState([]);
   const [page, setPage] = useState(1);
   const dropiIdRef = useRef(null);
+  const [token, setToken] = useState<string>()
 
   // Helper function to chunk an array into smaller arrays of specified length
   const chunkArray = (array, chunkSize) => {
