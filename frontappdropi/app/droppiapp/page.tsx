@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 import ProductsInfoTable from "@/components/ProductsInfoTable";
@@ -37,7 +36,7 @@ export default function Page() {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
+            Authorization: `Bearer ${"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcHAuZHJvcGkuY286ODAiLCJpYXQiOjE3MTU5MTE2MTAsImV4cCI6MTcxNTk5ODAxMCwibmJmIjoxNzE1OTExNjEwLCJqdGkiOiI1VUlzQWxKVFY5cWFhd2hlIiwic3ViIjoxMDUzMTgsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEiLCJhdWQiOiJEUk9QSSIsInRva2VuX3R5cGUiOiJEUk9QSSJ9.T0mcAvB0xz--TveOE4XR1q-FV01CFdBqAx5xsst95b4"}`,
           },
         },
       );

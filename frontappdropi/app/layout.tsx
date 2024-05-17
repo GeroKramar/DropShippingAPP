@@ -20,13 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <ThemeModeScript />
       </head>
       <body className={inter.className}>
-        <NavbarAPP/>
+        <ThemeModeScript />
+        <NavbarAPP />
         {children}
-        <FooterAPP/>
-        </body>
+        <FooterAPP />
+      </body>
     </html>
   );
 }

@@ -1,10 +1,9 @@
 "use client";
-
 import { Button, Checkbox, Label, Modal, TextInput } from "flowbite-react";
 import { useState } from "react";
 
 export function BtnLogin() {
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false); // Inicialmente, el modal está cerrado
   const [email, setEmail] = useState('');
 
   function onCloseModal() {
